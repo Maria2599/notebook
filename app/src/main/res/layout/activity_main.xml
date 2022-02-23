@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            android:id="@+id/remove1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-43dp"
+            android:layout_toLeftOf="@+id/nametext"
+            android:background="@null"
+            android:src="@drawable/ic_delete" />
+
+        <EditText
+            android:id="@+id/nametext"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="50dp"
+            android:hint="         Title"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imgbtn"
+        android:layout_width="414dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametext"
+        android:background="@null"
+        android:src="@drawable/ic_mic_2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            android:id="@+id/remove2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="-43dp"
+            android:layout_toLeftOf="@+id/notestext"
+            android:background="@null"
+            android:src="@drawable/ic_delete" />
+
+        <EditText
+            android:id="@+id/notestext"
+            android:layout_width="538dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="50dp"
+            android:hint="         Notes"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imgbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_mic_2"
+        android:layout_below="@+id/notestext"/>
+
+
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Insert note"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgbtn2"/>
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Update note"
+        android:layout_below="@+id/btninsert"/>
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Delete note"
+        android:layout_below="@+id/btnupdate"/>
+
+    <Button
+        android:id="@+id/btndeleteall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Delete all notes"
+        android:layout_below="@+id/btndelete"/>
+
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="View note"
+        android:layout_below="@+id/btndeleteall"/>
+
+
+    <Button
+        android:id="@+id/btnviewall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="View all notes"
+        android:layout_below="@+id/btnview"/>
+</LinearLayout>
+
+</ScrollView>
